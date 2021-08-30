@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src="https://assets.adobedtm.com/e9875dd51dbe/50293fff253a/launch-e3c498dd4654-development.min.js" async></script>
+</head>
+
+<body>
+
+<h2>DEMO 2</h2>
+<script language="javascript" type="text/javascript" src="VisitorAPI.js" ></script>
+<script language="javascript" type="text/javascript" src="AppMeasurement.js" ></script>
+<script language="javascript" type="text/javascript" >
+
+s.pageName="2nd Page";
+s.props4=s.pageName;
+s.state="Haryana";
+s.zip="125050";
+
+function submitt(){
+s.prop5=document.getElementById("college").value;
+s.prop6=document.getElementById("company").value;
+
+s.eVar1=document.getElementById("mobile").value;
+s.eVar2=document.getElementById("model").value;
+s.eVar3=document.getElementById("colour").value;
+s.eVar4=document.getElementById("year").value;
+
+//Hirerchy 
+s.hier1 = "Sports;Local Sports;Baseball";
+s.hier2 = "Mobile;Samsung;Note";
+s.hier3 = "Mobile;Apple;Iphone";
+
+
+//List Variable 
+s.list1="A;B;C"
+s.list2="D;E;F"
+s.list3=s.prop5+"  ; "+s.prop6;
+
+//Submit button 
+s.events="event1"
+
+s.t();
+s.tl(this,"o","custom link");
+
+}
+</script>
+<form method="post" >
+
+<label for="mobile">Mobile Brand:-</label><br>
+<input type="text" id="mobile" name="mobile" ><br/> <br/>
+<label for="model">Model:-</label><br>
+<input type="text" id="model" name="model" ><br/> <br/>
+
+<script>
+</script>
+
+</button>
+<input type="button" onclick=submitt()  value ="Submit"type="submit"></input>
+
+
+</form>
+</body>
+</html>
